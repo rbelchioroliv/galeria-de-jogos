@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Galeria de Jogos</title>
+</head>
+<body>
+    <header>
+        <h1>Galeria de Jogos</h1>
+
+        <div>
+            <input type="text" id="searchInput" placeholder="Digite o nome de um jogo...">
+            <button id="theme-toggle-btn">🌙</button>
+            <button id="searchButton">Buscar</button>
+        </div>
+
+    </header>
+
+    <div class="filters-container">
+        <div id="genre-filters">
+            <!-- Botões de gênero serão inseridos aqui -->
+        </div>
+        <div class="sort-container">
+            <label for="sort-by">Ordenar por:</label>
+            <select id="sort-by">
+                <option value="default">Padrão</option>
+                <option value="az">Ordem Alfabética (A-Z)</option>
+                <option value="za">Ordem Alfabética (Z-A)</option>
+                <option value="newest">Mais Novos</option>
+                <option value="oldest">Mais Antigos</option>
+            </select>
+        </div>
+    </div>
+
+    <main>
+        <section id="cards-section">
+            <!-- Indicador de Loading -->
+            <div class="loader-container" id="loader">
+                <div class="loader"></div>
+            </div>
+
+        </section>
+        <section id="pagination-section" class="pagination-container">
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul class="footer-links">
+            <li>
+                <a href="https://github.com/rbelchioroliv" target="_blank">GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/renan-belchior-b48a84198/" target="_blank">LinkedIn</a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top-btn" title="Voltar ao topo">↑</button>
+
+    <!-- Modal para Vídeo -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content video-modal-content">
+            <span class="close-btn video-close-btn">&times;</span>
+            <div id="video-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
