@@ -1,0 +1,245 @@
+[
+{
+    "nome":"The Witcher 3: Wild Hunt",
+    "descricao": "Um RPG de ação em mundo aberto, onde você joga como Geralt de Rivia, um caçador de monstros.",
+    "ano": 2015,
+    "link": "https://www.thewitcher.com/en/witcher3",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/292030/capsule_616x353.jpg",
+    "genero": ["RPG", "Ação", "Aventura"],
+    "video": "c0i88t0Kacs"
+},
+{
+    "nome":"Red Dead Redemption 2",
+    "descricao": "Um épico de faroeste da Rockstar Games sobre a vida no coração implacável da América.",
+    "ano": 2018,
+    "link": "https://www.rockstargames.com/reddeadredemption2/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/capsule_616x353.jpg",
+    "genero": ["Ação", "Aventura"],
+    "video": "gmA6MrX81z4"
+},
+{
+    "nome":"Minecraft",
+    "descricao": "Um jogo sandbox onde você pode construir qualquer coisa que imaginar com blocos em um mundo 3D.",
+    "ano": 2011,
+    "link": "https://www.minecraft.net/",
+    "imagem": "https://xboxwire.thesourcemediaassets.com/sites/8/2024/05/Hero-bdef2532984d6fcafc40.jpg",
+    "genero": ["Sandbox", "Sobrevivência"],
+    "video": "MmB9b5njVbA"
+},
+{
+    "nome":"Grand Theft Auto V",
+    "descricao": "Um jogo de ação e aventura em mundo aberto que se passa na cidade fictícia de Los Santos.",
+    "ano": 2013,
+    "link": "https://www.rockstargames.com/gta-v",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/271590/capsule_616x353.jpg",
+    "genero": ["Ação", "Aventura"],
+    "video": "QkkoHAzjnUs"
+},
+{
+    "nome":"The Legend of Zelda: Breath of the Wild",
+    "descricao": "Explore o vasto reino de Hyrule neste aclamado jogo de ação e aventura.",
+    "ano": 2017,
+    "link": "https://www.zelda.com/breath-of-the-wild/",
+    "imagem": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000096817/cfe9f8d674be958326d3ba11fc7598a4383e5c5d7809b6239ccac0783aac6cd8",
+    "genero": ["Aventura", "Ação", "RPG"],
+    "video": "1rPxiXXxftE"
+},
+{
+    "nome":"Elden Ring",
+    "descricao": "Um RPG de ação de fantasia sombria criado pela FromSoftware em colaboração com George R. R. Martin.",
+    "ano": 2022,
+    "link": "https://en.bandainamcoent.eu/elden-ring",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/capsule_616x353.jpg",
+    "genero": ["RPG", "Ação"],
+    "video": "E3Huy2cdih0"
+},
+{
+    "nome":"Stardew Valley",
+    "descricao": "Um RPG de simulação de fazenda onde você herda uma antiga fazenda e começa uma nova vida.",
+    "ano": 2016,
+    "link": "https://www.stardewvalley.net/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/413150/capsule_616x353.jpg",
+    "genero": ["Simulação", "RPG", "Indie"],
+    "video": "ot7uXNQskhs"
+},
+{
+    "nome":"Among Us",
+    "descricao": "Um jogo de dedução social multiplayer online onde os jogadores trabalham juntos, mas alguns são impostores.",
+    "ano": 2018,
+    "link": "https://www.innersloth.com/games/among-us/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/945360/capsule_616x353.jpg",
+    "genero": ["Social", "Indie"],
+    "video": "NSJ4cESNQfE"
+},
+{
+    "nome":"Fortnite",
+    "descricao": "Um popular jogo de batalha real onde 100 jogadores lutam para ser o último sobrevivente.",
+    "ano": 2017,
+    "link": "https://www.epicgames.com/fortnite/",
+    "imagem": "https://cdn2.unrealengine.com/fneco-2025-keyart-thumb-1920x1080-de84aedabf4d.jpg",
+    "genero": ["Ação", "Battle Royale"],
+    "video": "7bq0v_I_42I"
+},
+{
+    "nome":"Cyberpunk 2077",
+    "descricao": "Um RPG de ação e aventura em mundo aberto ambientado na megalópole de Night City.",
+    "ano": 2020,
+    "link": "https://www.cyberpunk.net/",
+    "imagem": "https://upload.wikimedia.org/wikipedia/pt/f/f7/Cyberpunk_2077_capa.png",
+    "genero": ["RPG", "Ação"],
+    "video": "8X2kIfS6fb8"
+},
+{
+    "nome":"Hades",
+    "descricao": "Desafie o deus dos mortos enquanto você batalha para fugir do Submundo neste roguelike.",
+    "ano": 2020,
+    "link": "https://www.supergiantgames.com/games/hades/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/capsule_616x353.jpg?t=1693591981",
+    "genero": ["Ação", "Indie", "RPG"],
+    "video": "91t0ha9x0AE"
+},
+{
+    "nome":"God of War",
+    "descricao": "Com seu filho Atreus, Kratos se aventura pelas terras nórdicas para cumprir uma promessa.",
+    "ano": 2018,
+    "link": "https://www.playstation.com/pt-br/games/god-of-war/",
+    "imagem": "https://cdn1.epicgames.com/offer/3ddd6a590da64e3686042d108968a6b2/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d52751ffabb7b7_1200x1600-fbdf3cbc2980749091d52751ffabb7b7",
+    "genero": ["Ação", "Aventura"],
+    "video": "K0u_kAWLJOA"
+},
+{
+    "nome":"Hollow Knight",
+    "descricao": "Explore um vasto reino em ruínas de insetos e heróis neste aclamado jogo de ação e aventura.",
+    "ano": 2017,
+    "link": "https://www.hollowknight.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/367520/capsule_616x353.jpg?t=1667006028",
+    "genero": ["Aventura", "Indie", "Plataforma"],
+    "video": "UAO2urG23S4"
+},
+{
+    "nome": "Portal 2",
+    "descricao": "Um quebra-cabeça em primeira pessoa aclamado pela crítica, com uma jogabilidade inovadora.",
+    "ano": 2011,
+    "link": "https://www.thinkwithportals.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/620/capsule_616x353.jpg",
+    "genero": ["Quebra-cabeça", "Aventura"],
+    "video": "tax4e4hBBZc"
+},
+{
+    "nome": "BioShock",
+    "descricao": "Explore a cidade subaquática de Rapture, um refúgio para as mentes da sociedade que caiu em uma distopia.",
+    "ano": 2007,
+    "link": "https://www.2k.com/en-US/game/bioshock/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/7670/capsule_616x353.jpg",
+    "genero": ["Ação", "FPS"],
+    "video": "CoYor-q_c_g"
+},
+{
+    "nome": "The Elder Scrolls V: Skyrim",
+    "descricao": "Um épico RPG de fantasia em mundo aberto onde você, como o Dragonborn, deve salvar o mundo.",
+    "ano": 2011,
+    "link": "https://elderscrolls.bethesda.net/en/skyrim",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/489830/capsule_616x353.jpg",
+    "genero": ["RPG", "Aventura"],
+    "video": "JSRtYpNRoN0"
+},
+{
+    "nome": "Baldur's Gate 3",
+    "descricao": "Reúna seu grupo e retorne aos Reinos Esquecidos em um conto de companheirismo e traição.",
+    "ano": 2023,
+    "link": "https://baldursgate3.game/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1086940/capsule_616x353.jpg",
+    "genero": ["RPG", "Estratégia"],
+    "video": "1T22pB-u_w0"
+},
+{
+    "nome": "Celeste",
+    "descricao": "Ajude Madeline a sobreviver a seus demônios internos em sua jornada até o topo da Montanha Celeste.",
+    "ano": 2018,
+    "link": "https://www.celestegame.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/504230/capsule_616x353.jpg",
+    "genero": ["Plataforma", "Indie"],
+    "video": "70d9irlxiB4"
+},
+{
+    "nome": "Disco Elysium",
+    "descricao": "Um RPG inovador onde você é um detetive com um sistema de habilidades único à sua disposição.",
+    "ano": 2019,
+    "link": "https://discoelysium.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/632470/capsule_616x353.jpg",
+    "genero": ["RPG", "Indie"],
+    "video": "p2P5Y_1yASc"
+},
+{
+    "nome": "Mass Effect 2",
+    "descricao": "Monte uma equipe de elite para uma missão suicida e salve a galáxia da aniquilação.",
+    "ano": 2010,
+    "link": "https://www.ea.com/games/mass-effect/mass-effect-legendary-edition",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/24980/capsule_616x353.jpg",
+    "genero": ["RPG", "Ação", "FPS"],
+    "video": "tLcf33rKy_4"
+},
+{
+    "nome": "Outer Wilds",
+    "descricao": "Explore um sistema solar preso em um loop temporal infinito neste mistério de mundo aberto.",
+    "ano": 2019,
+    "link": "https://www.mobiusdigitalgames.com/outer-wilds.html",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/753640/capsule_616x353.jpg",
+    "genero": ["Aventura", "Indie", "Quebra-cabeça"],
+    "video": "d6lgR1_D1dE"
+},
+{
+    "nome": "Subnautica",
+    "descricao": "Caia em um mundo oceânico alienígena após um acidente, e a única direção a seguir é para baixo.",
+    "ano": 2018,
+    "link": "https://unknownworlds.com/subnautica/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/264710/capsule_616x353.jpg",
+    "genero": ["Sobrevivência", "Aventura", "Indie"],
+    "video": "Rz2goUOUgpo"
+},
+{
+    "nome": "Persona 5 Royal",
+    "descricao": "Vista a máscara dos Ladrões Fantasmas de Corações e realize grandes assaltos.",
+    "ano": 2019,
+    "link": "https://atlus.com/p5r/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1687950/capsule_616x353.jpg",
+    "genero": ["RPG", "Estratégia"],
+    "video": "SKpSpv-4B_U"
+},
+{
+    "nome": "Undertale",
+    "descricao": "Um RPG onde você não precisa destruir ninguém. Explore um mundo subterrâneo cheio de monstros.",
+    "ano": 2015,
+    "link": "https://undertale.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/391540/capsule_616x353.jpg",
+    "genero": ["RPG", "Indie"],
+    "video": "1Hojv0m3TqA"
+},
+{
+    "nome": "Terraria",
+    "descricao": "Cave, lute, explore, construa! O próprio mundo está ao seu alcance enquanto você luta pela sobrevivência.",
+    "ano": 2011,
+    "link": "https://terraria.org/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/105600/capsule_616x353.jpg",
+    "genero": ["Sandbox", "Aventura", "Sobrevivência"],
+    "video": "w7uOhFTrrq0"
+},
+{
+    "nome": "Fallout: New Vegas",
+    "descricao": "Lute pelo controle da joia do deserto, New Vegas, em um mundo pós-apocalíptico.",
+    "ano": 2010,
+    "link": "https://fallout.bethesda.net/en/games/fallout-new-vegas",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/22380/capsule_616x353.jpg",
+    "genero": ["RPG", "Ação", "FPS"],
+    "video": "l-x-1fm2cq8"
+},
+{
+    "nome": "Half-Life: Alyx",
+    "descricao": "Uma aventura em realidade virtual que se passa antes dos eventos de Half-Life 2.",
+    "ano": 2020,
+    "link": "https://www.half-life.com/en/alyx/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/546560/capsule_616x353.jpg",
+    "genero": ["VR", "Ação", "Aventura"],
+    "video": "O2W0N3uKXmo"
+}
+]
