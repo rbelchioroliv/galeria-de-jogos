@@ -1,5 +1,7 @@
 let dados = [];
 let dadosFiltrados = [];
+const mainContent = document.querySelector('main');
+const header = document.querySelector('header');
 const cardsSection = document.getElementById('cards-section');
 const searchInput = document.getElementById('searchInput');
 const searchButton = document.getElementById('searchButton');
@@ -16,6 +18,10 @@ const videoCloseBtn = document.querySelector('.video-close-btn');
 let paginaAtual = 1;
 const itensPorPagina = 6;
 let activeGenre = 'Todos';
+let allGenres = []; // Armazenará todos os gêneros para fácil acesso
+
+// --- Lógica de Autenticação ---
+let users = JSON.parse(localStorage.getItem('users')) || [];
 let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
 function renderCards(games) {
@@ -184,33 +190,268 @@ function applyFiltersAndSort() {
     updateDisplay();
 }
 
-function populateGenreFilters() {
+function updateGenreFilterDisplay() {
+    // Ponto de quebra para mobile, o mesmo usado no CSS
+    const isMobile = window.innerWidth <= 768;
+
+    if (isMobile) {
+        renderGenreSelect();
+    } else {
+        renderGenreButtons();
+    }
+}
+
+function renderGenreButtons() {
+    genreFiltersContainer.innerHTML = allGenres.map(genre => 
+        `<button class="genre-btn ${genre === activeGenre ? 'active' : ''}" data-genre="${genre}">${genre}</button>`
+    ).join('');
+}
+
+function renderGenreSelect() {
+    genreFiltersContainer.innerHTML = ''; // Limpa os botões existentes
+    const select = document.createElement('select');
+    select.classList.add('genre-select'); // Classe para estilização
+
+    select.innerHTML = allGenres.map(genre => 
+        `<option value="${genre}" ${genre === activeGenre ? 'selected' : ''}>${genre}</option>`
+    ).join('');
+
+    select.addEventListener('change', (e) => {
+        activeGenre = e.target.value;
+        applyFiltersAndSort();
+    });
+
+    genreFiltersContainer.appendChild(select);
+}
+
+function populateAllGenres() {
     const genres = new Set(dados.flatMap(jogo => jogo.genero));
-    const filterButtons = ['Todos', ...genres, 'Favoritos'];
-    genreFiltersContainer.innerHTML = filterButtons.map(genre => `<button class="genre-btn ${genre === activeGenre ? 'active' : ''}" data-genre="${genre}">${genre}</button>`).join('');
+    // Ordena os gêneros alfabeticamente e adiciona 'Todos' e 'Favoritos'
+    allGenres = ['Todos', ...Array.from(genres).sort(), 'Favoritos'];
+}
+
+function showMainApp(username) {
+    // Remove a tela de login/cadastro se existir
+    const authOverlay = document.getElementById('auth-overlay');
+    if (authOverlay) {
+        authOverlay.remove();
+    }
+
+    // Mostra o conteúdo principal
+    mainContent.style.display = 'block';
+    header.style.display = 'flex';
+    paginationSection.style.display = 'flex';
+    document.querySelector('.filters-container').style.display = 'flex';
+    document.querySelector('.footer').style.display = 'block';
+
+    // Adiciona informações do usuário e botão de logout no header
+    const userInfoDiv = document.createElement('div');
+    userInfoDiv.className = 'header-user-info';
+    userInfoDiv.innerHTML = `
+        <span>Bem-vindo(a), ${username}!</span>
+        <button id="logout-btn" class="genre-btn">Sair</button>
+    `;
+    header.appendChild(userInfoDiv);
+
+    document.getElementById('logout-btn').addEventListener('click', () => {
+        sessionStorage.removeItem('currentUser');
+        window.location.reload(); // Recarrega a página para mostrar a tela de login
+    });
+}
+
+function renderAuthScreen() {
+    // Esconde o conteúdo principal
+    mainContent.style.display = 'none';
+    header.style.display = 'none';
+    paginationSection.style.display = 'none';
+    document.querySelector('.filters-container').style.display = 'none';
+    document.querySelector('.footer').style.display = 'none';
+
+    const authOverlay = document.createElement('div');
+    authOverlay.id = 'auth-overlay';
+    authOverlay.className = 'auth-overlay';
+
+    authOverlay.innerHTML = `
+        <div class="auth-container" id="auth-container">
+            <div class="auth-flipper">
+                <!-- Lado da Frente: Login -->
+                <div class="auth-side auth-side-front">
+                    <h2>Login</h2>
+                    <form class="auth-form" id="login-form">
+                        <input type="text" id="login-username" placeholder="Nome de usuário" required>
+                        <input type="password" id="login-password" placeholder="Senha" required>
+                        <button type="submit">Entrar</button>
+                    </form>
+                    <p class="auth-error" id="login-error"></p>
+                    <p class="auth-switch">Não tem uma conta? <span id="switch-to-register">Cadastre-se</span></p>
+                </div>
+
+                <!-- Lado de Trás: Cadastro -->
+                <div class="auth-side auth-side-back">
+                    <h2>Cadastro</h2>
+                    <form class="auth-form" id="register-form">
+                        <input type="text" id="register-username" placeholder="Escolha um nome de usuário" required>
+                        <input type="password" id="register-password" placeholder="Crie uma senha" required>
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                    <p class="auth-error" id="register-error"></p>
+                    <p class="auth-switch">Já tem uma conta? <span id="switch-to-login">Faça login</span></p>
+                </div>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(authOverlay);
+
+    const authContainer = document.getElementById('auth-container');
+
+    // Eventos para virar o card
+    document.getElementById('switch-to-register').addEventListener('click', () => {
+        authContainer.classList.add('is-flipped');
+    });
+
+    document.getElementById('switch-to-login').addEventListener('click', () => {
+        authContainer.classList.remove('is-flipped');
+    });
+
+    // Eventos dos formulários
+    document.getElementById('login-form').addEventListener('submit', handleLogin);
+    document.getElementById('register-form').addEventListener('submit', handleRegister);
+}
+
+/* As funções renderLoginScreen e renderRegisterScreen não são mais necessárias
+   e podem ser removidas ou comentadas. A nova função renderAuthScreen
+   cuida de ambas as telas.
+*/
+
+function renderLoginScreen() {
+    // Esconde o conteúdo principal
+    mainContent.style.display = 'none';
+    header.style.display = 'none';
+    paginationSection.style.display = 'none';
+    document.querySelector('.filters-container').style.display = 'none';
+    document.querySelector('.footer').style.display = 'none';
+
+    const authOverlay = document.createElement('div');
+    authOverlay.id = 'auth-overlay';
+    authOverlay.className = 'auth-overlay';
+
+    authOverlay.innerHTML = `
+        <div class="auth-container">
+            <h2>Login</h2>
+            <form class="auth-form" id="login-form">
+                <input type="text" id="login-username" placeholder="Nome de usuário" required>
+                <input type="password" id="login-password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p class="auth-error" id="login-error"></p>
+            <p class="auth-switch">Não tem uma conta? <span id="switch-to-register">Cadastre-se</span></p>
+        </div>
+    `;
+    document.body.appendChild(authOverlay);
+
+    document.getElementById('login-form').addEventListener('submit', handleLogin);
+    document.getElementById('switch-to-register').addEventListener('click', () => {
+        authOverlay.remove();
+        renderRegisterScreen();
+    });
+}
+
+function renderRegisterScreen() {
+    const authOverlay = document.createElement('div');
+    authOverlay.id = 'auth-overlay';
+    authOverlay.className = 'auth-overlay';
+
+    authOverlay.innerHTML = `
+        <div class="auth-container">
+            <h2>Cadastro</h2>
+            <form class="auth-form" id="register-form">
+                <input type="text" id="register-username" placeholder="Escolha um nome de usuário" required>
+                <input type="password" id="register-password" placeholder="Crie uma senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p class="auth-error" id="register-error"></p>
+            <p class="auth-switch">Já tem uma conta? <span id="switch-to-login">Faça login</span></p>
+        </div>
+    `;
+    document.body.appendChild(authOverlay);
+
+    document.getElementById('register-form').addEventListener('submit', handleRegister);
+    document.getElementById('switch-to-login').addEventListener('click', () => {
+        authOverlay.remove();
+        renderLoginScreen();
+    });
+}
+
+function handleLogin(e) {
+    e.preventDefault();
+    const username = document.getElementById('login-username').value;
+    const password = document.getElementById('login-password').value;
+    const errorEl = document.getElementById('login-error');
+
+    const user = users.find(u => u.username === username && u.password === password);
+
+    if (user) {
+        sessionStorage.setItem('currentUser', JSON.stringify(user));
+        window.location.reload();
+    } else {
+        errorEl.textContent = 'Usuário ou senha inválidos.';
+    }
+}
+
+function handleRegister(e) {
+    e.preventDefault();
+    const username = document.getElementById('register-username').value;
+    const password = document.getElementById('register-password').value;
+    const errorEl = document.getElementById('register-error');
+
+    if (users.some(u => u.username === username)) {
+        errorEl.textContent = 'Este nome de usuário já existe.';
+        return;
+    }
+
+    users.push({ username, password });
+    localStorage.setItem('users', JSON.stringify(users));
+    
+    alert('Cadastro realizado com sucesso! Faça o login para continuar.');
+    // Vira o card de volta para a tela de login
+    const authContainer = document.getElementById('auth-container');
+    authContainer.classList.remove('is-flipped');
 }
 
 async function init() {
-    // Mostra o loader e esconde a paginação
-    loader.style.display = 'block';
-    paginationSection.style.display = 'none';
+    const currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
 
-    let resposta = await fetch("data.json");
-    dados = await resposta.json();
-    populateGenreFilters();
-    applyFiltersAndSort();
-    updateDisplay();
-    paginationSection.style.display = 'flex'; // Mostra a paginação após carregar
+    if (currentUser) {
+        // Se o usuário está logado, mostra o app
+        showMainApp(currentUser.username);
+        loader.style.display = 'block';
+        paginationSection.style.display = 'none';
+        
+        let resposta = await fetch("data.json");
+        dados = await resposta.json();
+        populateAllGenres();
+        updateGenreFilterDisplay();
+        applyFiltersAndSort();
+        updateDisplay();
+        paginationSection.style.display = 'flex';
+    } else {
+        // Se não, mostra a tela de login
+        renderAuthScreen(); // Substituímos a chamada aqui
+    }
 }
 
 genreFiltersContainer.addEventListener('click', (e) => {
     if (e.target.classList.contains('genre-btn')) {
+        // A delegação de evento continua funcionando para os botões
         const selectedGenre = e.target.dataset.genre;
         activeGenre = selectedGenre;
         // Atualiza a classe 'active'
         document.querySelectorAll('.genre-btn').forEach(btn => btn.classList.remove('active'));
         e.target.classList.add('active');
         applyFiltersAndSort();
+    } else if (e.target.classList.contains('genre-select')) {
+        // O evento do select é tratado diretamente em sua criação, então não fazemos nada aqui.
+        return;
     }
 });
 
@@ -231,6 +472,9 @@ sortBySelect.addEventListener('change', applyFiltersAndSort);
 function handleSearch() { // Função mantida para o botão e Enter
     applyFiltersAndSort();
 }
+
+// Adiciona um listener para redimensionamento da janela
+window.addEventListener('resize', updateGenreFilterDisplay);
 
 // Lógica do Tema
 themeToggleBtn.addEventListener('click', () => {

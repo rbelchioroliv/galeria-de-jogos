@@ -44,12 +44,20 @@ header {
     gap: 1rem;
 }
 
+.header-user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
 header h1 {
     font-size: 1.5rem;
     margin: 0;
     font-weight: 500;
     white-space: nowrap;
-    position: relative; /* Necessário para a animação do sublinhado */
+    position: relative;
+    /* Necessário para a animação do sublinhado */
     background: linear-gradient(to right, var(--primary-color) 20%, var(--secondary-color) 50%, var(--primary-color) 80%);
     background-size: 200% auto;
     color: transparent;
@@ -57,7 +65,8 @@ header h1 {
     background-clip: text;
     animation: gradient-flow 4s linear infinite;
     transition: transform 0.3s ease;
-    font-family: "Orbitron", sans-serif; /* Aplica a fonte especial apenas no título */
+    font-family: "Orbitron", sans-serif;
+    /* Aplica a fonte especial apenas no título */
 }
 
 header h1::after {
@@ -138,11 +147,13 @@ div input:focus {
 #searchButton:active {
     transform: scale(0.98);
 }
+
 main {
     max-width: 80rem;
     margin: 0 auto;
     flex-grow: 1;
-    padding: 2rem 1rem; /* Adiciona espaçamento interno */
+    padding: 2rem 1rem;
+    /* Adiciona espaçamento interno */
 }
 
 .filters-container {
@@ -172,10 +183,24 @@ main {
     transition: all 0.2s ease;
 }
 
-.genre-btn.active, .genre-btn:hover {
+.genre-btn.active,
+.genre-btn:hover {
     background-color: var(--primary-color);
     color: var(--bg-color);
     border-color: var(--primary-color);
+}
+
+.genre-select {
+    width: 100%; /* Ocupa toda a largura do container */
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid var(--tertiary-color);
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    font-family: inherit;
+    font-size: 1rem;
+    -webkit-appearance: none; /* Remove a aparência padrão no iOS */
+    appearance: none;
 }
 
 .sort-container select {
@@ -193,7 +218,8 @@ main {
     gap: 2rem;
 }
 
-.game-card { /* Usando a classe que definimos no JS */
+.game-card {
+    /* Usando a classe que definimos no JS */
     background: var(--card-bg-color);
     border-radius: 8px;
     padding: 1.5rem;
@@ -201,23 +227,30 @@ main {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     transform-style: preserve-3d;
     /* Habilita o contexto 3D para os elementos filhos */
-    position: relative; /* Necessário para posicionar o tooltip */
+    position: relative;
+    /* Necessário para posicionar o tooltip */
     display: flex;
     flex-direction: column;
 }
+
 .card-header {
     display: flex;
-    justify-content: center; /* Centraliza o título agora que ele está sozinho */
+    justify-content: center;
+    /* Centraliza o título agora que ele está sozinho */
     align-items: center;
     margin-bottom: 0.5rem;
 }
 
 .card-actions {
     display: flex;
-    gap: 1rem; /* Aumenta o espaço entre os botões */
-    justify-content: flex-end; /* Alinha os botões à direita */
-    margin-top: auto; /* Empurra os botões para o fundo do card */
-    padding-top: 1rem; /* Adiciona um espaço acima dos botões */
+    gap: 1rem;
+    /* Aumenta o espaço entre os botões */
+    justify-content: flex-end;
+    /* Alinha os botões à direita */
+    margin-top: auto;
+    /* Empurra os botões para o fundo do card */
+    padding-top: 1rem;
+    /* Adiciona um espaço acima dos botões */
 }
 
 .card-action-btn {
@@ -229,14 +262,23 @@ main {
     transition: color 0.2s;
     padding: 0;
 }
-.card-action-btn:hover { color: var(--primary-color); }
-.favorite-btn.favorited { color: #e44d4d; }
+
+.card-action-btn:hover {
+    color: var(--primary-color);
+}
+
+.favorite-btn.favorited {
+    color: #e44d4d;
+}
 
 .game-image {
     width: 100%;
-    height: 180px; /* Altura fixa para a imagem */
-    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
-    border-radius: 8px 8px 0 0; /* Arredonda apenas os cantos superiores */
+    height: 180px;
+    /* Altura fixa para a imagem */
+    object-fit: cover;
+    /* Garante que a imagem cubra a área sem distorcer */
+    border-radius: 8px 8px 0 0;
+    /* Arredonda apenas os cantos superiores */
     margin-bottom: 1rem;
     transform: translateZ(35px);
     /* Move a imagem 35px para "frente" no eixo Z */
@@ -283,15 +325,18 @@ article a:hover {
     position: absolute;
     bottom: 1.5rem;
     left: 50%;
-    transform: translateX(-50%); /* Centraliza o tooltip horizontalmente */
+    transform: translateX(-50%);
+    /* Centraliza o tooltip horizontalmente */
     background-color: rgba(0, 0, 0, 0.85);
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 6px;
     font-size: 0.9rem;
     white-space: nowrap;
-    z-index: 20; /* Garante que o tooltip fique sobre outros elementos do card */
-    animation: fadeIn 0.3s ease; /* Animação de entrada */
+    z-index: 20;
+    /* Garante que o tooltip fique sobre outros elementos do card */
+    animation: fadeIn 0.3s ease;
+    /* Animação de entrada */
 }
 
 /* Estilos do Modal de Vídeo */
@@ -304,7 +349,7 @@ article a:hover {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .video-modal-content {
@@ -314,11 +359,24 @@ article a:hover {
     margin: 5% auto;
 }
 
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 @keyframes gradient-flow {
-    0% { background-position: 200% center; }
-    100% { background-position: -200% center; }
+    0% {
+        background-position: 200% center;
+    }
+
+    100% {
+        background-position: -200% center;
+    }
 }
 
 .footer {
@@ -399,13 +457,19 @@ article a:hover {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Botão Voltar ao Topo */
 #back-to-top-btn {
-    display: none; /* Escondido por padrão */
+    display: none;
+    /* Escondido por padrão */
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -474,7 +538,8 @@ article a:hover {
         word-wrap: break-word;
     }
 
-    div input, div input::placeholder {
+    div input,
+    div input::placeholder {
         font-size: 1rem;
     }
 
@@ -490,8 +555,116 @@ article a:hover {
         gap: 0.5rem;
     }
 
-    .footer {
-        display: none;
+    #logout-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
     }
 
+}
+
+/* --- Estilos de Autenticação --- */
+.auth-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    perspective: 1500px; /* Adiciona perspectiva para o efeito 3D */
+}
+
+.auth-container {
+    width: 90%;
+    max-width: 400px;
+    height: 450px; /* Altura fixa para a animação funcionar bem */
+    position: relative;
+}
+
+.auth-flipper {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.auth-container.is-flipped .auth-flipper {
+    transform: rotateY(180deg);
+}
+
+.auth-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    
+    background-color: var(--card-bg-color);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-side-back {
+    transform: rotateY(180deg);
+}
+
+.auth-side h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--tertiary-color);
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+}
+
+.auth-form button {
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.auth-form button:hover {
+    opacity: 0.9;
+}
+
+.auth-switch {
+    margin-top: 1.5rem;
+    color: var(--tertiary-color);
+}
+
+.auth-switch span {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.auth-error {
+    color: #e44d4d;
+    margin-top: 1rem;
+    min-height: 1.2em;
 }
