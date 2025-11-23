@@ -91,24 +91,29 @@ div input {
     transition: all 0.2s ease;
     width: 30rem;
     color: var(--secondary-color);
-    margin-right: .5rem;
+    margin-right: 0; /* Removido o espaçamento extra */
 }
 
 #theme-toggle-btn {
-    background: none;
-    border: 1px solid var(--tertiary-color);
-    color: var(--tertiary-color);
+    position: fixed; /* Faz o botão flutuar */
+    bottom: 80px; /* Posição vertical, acima do botão 'voltar ao topo' */
+    right: 30px; /* Posição horizontal */
+    z-index: 101; /* Garante que fique por cima de outros elementos */
+
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
     cursor: pointer;
     border-radius: 50%;
     width: 45px;
     height: 45px;
     font-size: 1.2rem;
     transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #theme-toggle-btn:hover {
-    border-color: var(--primary-color);
-    color: var(--primary-color);
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
 }
 
 div input::placeholder {
@@ -500,6 +505,7 @@ article a:hover {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
+        position: relative; /* Faz o header rolar com a página */
         padding: 1rem;
     }
 
@@ -527,11 +533,12 @@ article a:hover {
 
     .filters-container {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center; /* Centraliza os itens do filtro */
+        gap: 1.5rem; /* Aumenta o espaçamento entre os filtros */
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
     header h1 {
         font-size: 1rem;
         max-width: 70%;
@@ -547,7 +554,8 @@ article a:hover {
         font-size: 1.3rem;
     }
 
-    div {
+    /* Torna a regra mais específica para o div dentro do header */
+    header > div {
         display: flex;
         align-items: center;
         justify-content: center;
