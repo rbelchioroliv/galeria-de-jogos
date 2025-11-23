@@ -241,5 +241,275 @@
     "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/546560/capsule_616x353.jpg",
     "genero": ["VR", "Ação", "Aventura"],
     "video": "O2W0N3uKXmo"
+},
+{
+    "nome": "Bloodborne",
+    "descricao": "Cace suas presas em uma cidade gótica amaldiçoada, onde a loucura e a morte espreitam em cada esquina.",
+    "ano": 2015,
+    "link": "https://www.playstation.com/pt-br/games/bloodborne/",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202010/2614/NVmnBXze9ElHzU6SmykrJLIV.png",
+    "genero": ["RPG", "Ação", "Terror"],
+    "video": "_5o8jwQKsDE"
+},
+{
+    "nome": "Sekiro: Shadows Die Twice",
+    "descricao": "Como um guerreiro desonrado, resgate seu mestre e se vingue de seu arqui-inimigo neste jogo da FromSoftware.",
+    "ano": 2019,
+    "link": "https://www.sekirothegame.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/814380/capsule_616x353.jpg",
+    "genero": ["Ação", "Aventura"],
+    "video": "rXMX4YJ7Lks"
+},
+{
+    "nome": "The Last of Us Part I",
+    "descricao": "Experimente a narrativa emocionante e os personagens inesquecíveis de The Last of Us, vencedor de mais de 200 prêmios de Jogo do Ano.",
+    "ano": 2022,
+    "link": "https://www.playstation.com/pt-br/games/the-last-of-us-part-i/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1888930/capsule_616x353.jpg",
+    "genero": ["Ação", "Aventura", "Sobrevivência"],
+    "video": "_3N3a_so_6M"
+},
+{
+    "nome": "Uncharted 4: A Thief's End",
+    "descricao": "Anos após sua última aventura, o caçador de tesouros Nathan Drake é forçado a voltar ao mundo dos ladrões.",
+    "ano": 2016,
+    "link": "https://www.playstation.com/pt-br/games/uncharted-4-a-thiefs-end/",
+    "imagem": "https://upload.wikimedia.org/wikipedia/pt/1/13/Uncharted_4_capa.png",
+    "genero": ["Ação", "Aventura"],
+    "video": "hh5jC1Ufh1k"
+},
+{
+    "nome": "Horizon Zero Dawn",
+    "descricao": "Em um mundo exuberante e pós-apocalíptico, onde a natureza retomou as ruínas de uma civilização esquecida, máquinas colossais dominam.",
+    "ano": 2017,
+    "link": "https://www.playstation.com/pt-br/games/horizon-zero-dawn/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/capsule_616x353.jpg",
+    "genero": ["RPG", "Ação", "Aventura"],
+    "video": "wzxpoUhO2ik"
+},
+{
+    "nome": "Marvel's Spider-Man",
+    "descricao": "Seja o Homem-Aranha em uma nova história do herói, enfrentando vilões icônicos em uma Nova York de mundo aberto.",
+    "ano": 2018,
+    "link": "https://www.playstation.com/pt-br/games/marvels-spider-man-remastered/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1817070/capsule_616x353.jpg",
+    "genero": ["Ação", "Aventura"],
+    "video": "8pR0o2fGyHg"
+},
+{
+    "nome": "Ghost of Tsushima",
+    "descricao": "Forje um novo caminho e trave uma guerra não convencional pela liberdade de Tsushima na pele de um samurai.",
+    "ano": 2020,
+    "link": "https://www.playstation.com/pt-br/games/ghost-of-tsushima/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2215430/capsule_616x353.jpg",
+    "genero": ["Ação", "Aventura"],
+    "video": "b_iU_8n_nd8"
+},
+{
+    "nome": "Final Fantasy VII Remake",
+    "descricao": "Uma recriação espetacular de um dos jogos mais visionários de todos os tempos, que reconstrói e expande a lendária aventura de RPG.",
+    "ano": 2020,
+    "link": "https://ffvii-remake.square-enix-games.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1462040/capsule_616x353.jpg",
+    "genero": ["RPG", "Ação"],
+    "video": "QLYyWAqTTAo"
+},
+{
+    "nome": "Death Stranding",
+    "descricao": "Do lendário criador Hideo Kojima, uma experiência que desafia gêneros. Sam Bridges deve desbravar um mundo transformado pelo Death Stranding.",
+    "ano": 2019,
+    "link": "https://www.kojimaproductions.jp/en/death-stranding-pc",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/capsule_616x353.jpg",
+    "genero": ["Ação", "Aventura"],
+    "video": "tCI396HyhbQ"
+},
+{
+    "nome": "Control",
+    "descricao": "Após uma agência secreta em Nova York ser invadida por uma ameaça de outro mundo, você se torna a nova Diretora lutando para recuperar o Controle.",
+    "ano": 2019,
+    "link": "https://www.controlgame.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/870780/capsule_616x353.jpg",
+    "genero": ["Ação", "Aventura"],
+    "video": "P_dviT55M0Y"
+},
+{
+    "nome": "Resident Evil 2",
+    "descricao": "Uma recriação do clássico de 1998, este jogo de terror de sobrevivência oferece uma nova visão da epidemia zumbi em Raccoon City.",
+    "ano": 2019,
+    "link": "https://www.residentevil.com/re2/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/883710/capsule_616x353.jpg",
+    "genero": ["Terror", "Sobrevivência", "Ação"],
+    "video": "u3wS-Q2Q_gY"
+},
+{
+    "nome": "Doom Eternal",
+    "descricao": "Os exércitos do inferno invadiram a Terra. Torne-se o Slayer em uma campanha épica para um jogador e conquiste demônios em dimensões.",
+    "ano": 2020,
+    "link": "https://bethesda.net/pt/game/doom-eternal",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/782330/capsule_616x353.jpg",
+    "genero": ["FPS", "Ação"],
+    "video": "2HOClc6Svg4"
+},
+{
+    "nome": "Ori and the Will of the Wisps",
+    "descricao": "Embarque em uma nova jornada em um mundo vasto e exótico, onde você encontrará inimigos imponentes e quebra-cabeças desafiadores.",
+    "ano": 2020,
+    "link": "https://www.orithegame.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1057090/capsule_616x353.jpg",
+    "genero": ["Plataforma", "Aventura", "Indie"],
+    "video": "2reK8k8heWI"
+},
+{
+    "nome": "Cuphead",
+    "descricao": "Um jogo de ação e plataforma com foco em batalhas de chefes, inspirado nos desenhos animados da década de 1930.",
+    "ano": 2017,
+    "link": "https://cupheadgame.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/268910/capsule_616x353.jpg",
+    "genero": ["Plataforma", "Ação", "Indie"],
+    "video": "NN-9SQXoi50"
+},
+{
+    "nome": "It Takes Two",
+    "descricao": "Embarque na jornada mais maluca da sua vida em It Takes Two, uma aventura de plataforma que subverte gêneros, criada exclusivamente para o modo cooperativo.",
+    "ano": 2021,
+    "link": "https://www.ea.com/games/it-takes-two",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1426210/capsule_616x353.jpg",
+    "genero": ["Cooperativo", "Aventura", "Plataforma"],
+    "video": "ga8hH0Iytl4"
+},
+{
+    "nome": "Psychonauts 2",
+    "descricao": "Combinando missões peculiares e conspirações misteriosas, Psychonauts 2 é um jogo de aventura e plataforma com estilo cinematográfico.",
+    "ano": 2021,
+    "link": "https://www.doublefine.com/games/psychonauts-2",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/607080/capsule_616x353.jpg",
+    "genero": ["Plataforma", "Aventura"],
+    "video": "Gq2M3P4sN-c"
+},
+{
+    "nome": "Gears 5",
+    "descricao": "Com a guerra total se aproximando, Kait Diaz se liberta para descobrir sua conexão com o inimigo e descobre o verdadeiro perigo para Sera - ela mesma.",
+    "ano": 2019,
+    "link": "https://www.xbox.com/pt-BR/games/gears-5",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1097840/capsule_616x353.jpg",
+    "genero": ["Ação", "Tiro"],
+    "video": "J2Co63iJ46M"
+},
+{
+    "nome": "Forza Horizon 5",
+    "descricao": "Sua maior aventura Horizon te espera! Explore as paisagens vibrantes e em constante evolução do México com uma ação de direção ilimitada e divertida.",
+    "ano": 2021,
+    "link": "https://forza.net/horizon5",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1551360/capsule_616x353.jpg",
+    "genero": ["Corrida", "Mundo Aberto"],
+    "video": "FYH9n37B7Yw"
+},
+{
+    "nome": "Sea of Thieves",
+    "descricao": "Oferece a experiência pirata essencial, desde navegar e lutar até explorar e saquear - tudo o que você precisa para viver a vida de pirata.",
+    "ano": 2018,
+    "link": "https://www.seaofthieves.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1172620/capsule_616x353.jpg",
+    "genero": ["Aventura", "Mundo Aberto", "Multiplayer"],
+    "video": "r5JIBa_B-gI"
+},
+{
+    "nome": "Valheim",
+    "descricao": "Um jogo brutal de exploração e sobrevivência para 1 a 10 jogadores, ambientado em um purgatório gerado proceduralmente e inspirado na cultura viking.",
+    "ano": 2021,
+    "link": "https://www.valheimgame.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/892970/capsule_616x353.jpg",
+    "genero": ["Sobrevivência", "Sandbox", "RPG"],
+    "video": "ll-i0j0Wp4U"
+},
+{
+    "nome": "Slay the Spire",
+    "descricao": "Fundimos jogos de cartas e roguelikes para criar o melhor construtor de baralhos para um jogador que conseguimos.",
+    "ano": 2019,
+    "link": "https://www.megacrit.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/646570/capsule_616x353.jpg",
+    "genero": ["Estratégia", "Indie", "Cartas"],
+    "video": "K2s2n2Gco9g"
+},
+{
+    "nome": "Dead Cells",
+    "descricao": "Um jogo de ação e plataforma roguelite inspirado em metroidvania. Você explorará um castelo em constante mudança... se conseguir passar por seus guardiões.",
+    "ano": 2018,
+    "link": "https://dead-cells.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/588650/capsule_616x353.jpg",
+    "genero": ["Ação", "Indie", "Plataforma"],
+    "video": "UD_whNqL1oI"
+},
+{
+    "nome": "The Outer Worlds",
+    "descricao": "Um RPG de ficção científica para um jogador da Obsidian Entertainment. Perdido em trânsito enquanto estava em uma nave colonizadora, você acorda décadas depois.",
+    "ano": 2019,
+    "link": "https://outerworlds.obsidian.net/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/578650/capsule_616x353.jpg",
+    "genero": ["RPG", "Ação", "FPS"],
+    "video": "MGLTgt0EEqc"
+},
+{
+    "nome": "A Plague Tale: Innocence",
+    "descricao": "Siga a sombria história da jovem Amicia e seu irmão mais novo, Hugo, em uma jornada comovente através das horas mais sombrias da história.",
+    "ano": 2019,
+    "link": "https://www.focus-entmt.com/en/games/a-plague-tale-innocence",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/752590/capsule_616x353.jpg",
+    "genero": ["Aventura", "Furtivo", "Ação"],
+    "video": "CtP6mNeN6yE"
+},
+{
+    "nome": "Monster Hunter: World",
+    "descricao": "Bem-vindo a um novo mundo! Assuma o papel de um caçador e mate monstros ferozes em um ecossistema vivo e pulsante.",
+    "ano": 2018,
+    "link": "https://www.monsterhunterworld.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/582010/capsule_616x353.jpg",
+    "genero": ["Ação", "RPG"],
+    "video": "Ro6r15w_E2g"
+},
+{
+    "nome": "Nier: Automata",
+    "descricao": "Conta a história dos androides 2B, 9S e A2 e sua batalha para recuperar uma distopia impulsionada por máquinas e invadida por poderosas máquinas.",
+    "ano": 2017,
+    "link": "https://www.niergame.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/524220/capsule_616x353.jpg",
+    "genero": ["Ação", "RPG"],
+    "video": "wJxNhJ8fjFk"
+},
+{
+    "nome": "Divinity: Original Sin 2",
+    "descricao": "O Divino está morto. O Vazio se aproxima. E os poderes que estão adormecidos dentro de você estão prestes a despertar. A batalha pela Divindade começou.",
+    "ano": 2017,
+    "link": "https://divinity.game/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/435150/capsule_616x353.jpg",
+    "genero": ["RPG", "Estratégia", "Aventura"],
+    "video": "bTWTFX8e_gE"
+},
+{
+    "nome": "Factorio",
+    "descricao": "Um jogo sobre a construção e criação de fábricas automatizadas para produzir itens de complexidade crescente, dentro de um mundo 2D infinito.",
+    "ano": 2020,
+    "link": "https://www.factorio.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/427520/capsule_616x353.jpg",
+    "genero": ["Simulação", "Estratégia", "Construção"],
+    "video": "DR01YdFtWj8"
+},
+{
+    "nome": "RimWorld",
+    "descricao": "Uma colônia de ficção científica simulada dirigida por um contador de histórias de IA inteligente. Gera histórias simulando psicologia, ecologia, combate e muito mais.",
+    "ano": 2018,
+    "link": "https://rimworldgame.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/294100/capsule_616x353.jpg",
+    "genero": ["Simulação", "Estratégia", "Sobrevivência"],
+    "video": "3tDrxOASUog"
+},
+{
+    "nome": "Deep Rock Galactic",
+    "descricao": "Um FPS cooperativo de 1-4 jogadores com anões espaciais durões, ambientes 100% destrutíveis, cavernas geradas proceduralmente e hordas infinitas de monstros alienígenas.",
+    "ano": 2020,
+    "link": "https://www.deeprockgalactic.com/",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/548430/capsule_616x353.jpg",
+    "genero": ["Cooperativo", "FPS", "Ação"],
+    "video": "1C_228qOfog"
 }
 ]
